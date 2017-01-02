@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <ImageView
+        android:id="@+id/video_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#000">
+    </ImageView>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/play"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/video_image"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#4E4F54">
+        <TextView
+            android:id="@+id/video_name"
+            android:text="Name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:maxLines="2"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/share_img"
+            android:gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/share_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_share"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

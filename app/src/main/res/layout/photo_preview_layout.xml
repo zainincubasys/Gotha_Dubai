@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#000">
+
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bar_drawable"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:text="Title"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:text="Done"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_marginRight="15dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomLy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bar_drawable"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/left_arrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:rotation="270"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/triangle_shape"/>
+            <ImageView
+                android:id="@+id/right_arrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:rotation="90"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/triangle_shape"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

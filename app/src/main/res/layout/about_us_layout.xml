@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_bg">
+
+    <VideoView
+        android:id="@+id/bg_video"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+    <RelativeLayout
+        android:background="@null"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/down_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:rotation="90"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/carrot_draw"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="GOTHA CLUB - DUBAI"/>
+
+        <ImageView
+            android:id="@+id/info_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/icon_infos"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/share_bar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@null"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/bg_video">
+
+        <ImageView
+            android:id="@+id/share_fb"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/icon_facebook"/>
+        <ImageView
+            android:id="@+id/share_call"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_phone"/>
+        <ImageView
+            android:id="@+id/share_mail"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/icon_mail"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#555555"
+        android:layout_below="@+id/share_bar">
+
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:textSize="17sp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:paddingTop="5dp"
+        android:textColor="@android:color/white"
+        android:gravity="center_horizontal"
+        />
+    </ScrollView>
+
+
+</RelativeLayout>

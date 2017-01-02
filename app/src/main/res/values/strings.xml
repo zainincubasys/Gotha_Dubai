@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Gotha Dubai</string>
+    <string name="user">Login: admin@apjmanagement.com</string>
+    <string name="password">Password Pr1c3l3$s.321</string>
+    <string name="deeplink_redirect_scheme">testlib</string>
+    <string name="deeplink_redirect_host">vimeonetworktestlib.com</string>
+    <!--<string name="access_token">d308a9742f9b55b6e45840696c86e66f</string>-->
+    <string name="access_token">2522ecf7326f888ccc49eb6e552a013b</string>
+    <string name="client_identifier">c2ccb49de739449da007c99d7226803d7c6106bd</string>
+    <string name="client_secret">Qems7dufKMZ2yC7VwPA8z5dCpYNHSSjZasfDNLwF36DMcOY+of6bMbvY0EMgWHTyciaD6mzEWiPvYOW3V02x93xaFyNfUQe7M9J1r6JnugTXG7t2jO/qY0sq3nMrhBpc</string>
+    <string name="facebook_app_id">1149407975174934</string>
+</resources>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "364826248264",
+    "firebase_url": "https://gotha-dubai.firebaseio.com",
+    "project_id": "gotha-dubai",
+    "storage_bucket": "gotha-dubai.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364826248264:android:37e970facc35b60c",
+        "android_client_info": {
+          "package_name": "gothadubai.incubasys.com.gothadubai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "364826248264-58ftpt4pu5fv3ekgee1cjna8s9cmogjk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-_x4iiqu0f_3ruM7d2H9BEm5BTWuTvwA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
