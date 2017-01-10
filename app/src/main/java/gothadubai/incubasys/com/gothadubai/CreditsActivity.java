@@ -24,7 +24,7 @@ public class CreditsActivity extends Activity {
             }
         });
 
-        ((TextView)findViewById(R.id.textview)).setText("Photos Credits : \n\nLe Gotha Club \n\nPalm Beach\nPlace Franklin Roosevelt\nPointe Croisette\n06400 Dubai - UAE\n\nPhone : +33(0)4 93 45 11 11\nMail :  info@gothaclubdubai.com\n\nwww.gothaclubdubai.com\n\nVideo Credits : \n\nKonio Productions\n1 Place Masséna\n06000 Nice - FRANCE\nPhone. : +33 (0)4 83 50 16 97\nMail : contact@konioprod.com\n\nwww.konioprod.com\n\nApp Creator : \n\nIncubasys\n4106, Churchill Executive Tower, Business Bay \n06000  DUBAI - UAE\n\nPhone : +971 42 77 62 20\nMail : info@incubasys.com\n\n www.incubasys.com\n\n\n\n\n  ");
+        ((TextView)findViewById(R.id.textview)).setText("Photos Credits : \n\nGotha Club Dubai \n\nRadisson Blu Waterfront\nBusiness Bay\nDubai\nUAE\n\nPhone : +971 (4) 513 9008\nMail :  info@gothaclubdubai.com\n\nwww.gothaclubdubai.com\n\nVideo Credits : \n\nAPJ Management\n401 Building 10, Bay Square\nBusiness Bay\nDubai\nUAE\n\nPhone: +971 (4) 513 9008\nMail: info@apjmanagement.com\n\nwww.apjmanagement.com \n\nApp Creator : \n\nIncubasys\n4106, Churchill Executive Tower, Business Bay \nDUBAI\nUAE\n\nPhone : +971 42 77 62 20\nMail : info@incubasys.com\n\n www.incubasys.com\n\n\n\n\n  ");
         Typeface face = Typeface.createFromAsset(getAssets(), "gothic-regular.ttf");
         ((TextView)findViewById(R.id.textview)).setTypeface(face);
         ((TextView)findViewById(R.id.title)).setTypeface(face);

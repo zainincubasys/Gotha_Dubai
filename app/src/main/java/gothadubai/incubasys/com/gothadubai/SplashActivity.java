@@ -54,7 +54,7 @@ public class SplashActivity extends Activity implements NetworkResponse {
         setContentView(R.layout.splash_activity_layout);
         super.onCreate(savedInstanceState);
         videoView = (VideoView)findViewById(R.id.splashId);
-        String path = "android.resource://" + getPackageName() + "/" + R.raw.splash_loading;
+        String path = "android.resource://" + getPackageName() + "/" + R.raw.final_loading;
         videoView.setVideoURI(Uri.parse(path));
         videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
