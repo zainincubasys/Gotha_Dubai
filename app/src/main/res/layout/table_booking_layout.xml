@@ -178,6 +178,7 @@
                 android:background="@android:color/white"/>
 
             <EditText
+                android:imeOptions="actionDone"
                 android:id="@+id/comment"
                 android:layout_width="match_parent"
                 android:layout_height="110dp"
@@ -185,7 +186,7 @@
                 android:gravity="start"
                 android:paddingTop="10dp"
                 android:textSize="18dp"
-                android:inputType="textMultiLine"
+                android:singleLine="true"
                 android:background="@null"
                 android:textColorHint="#D5D5D5"
                 android:paddingLeft="15dp"

@@ -125,6 +125,18 @@ public class EventModel {
     }
 
     public boolean isAvailable() {
+        try {
+            DateFormat format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ");
+            Date date = null;
+            date = format.parse(eventDate);
+
+            if(!date.after(new Date())){
+                isAvailable = false;
+            }
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         return isAvailable;
     }
 

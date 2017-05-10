@@ -39,7 +39,7 @@ public class AboutUsActivity extends Activity implements View.OnClickListener
         ((ImageView)findViewById(R.id.share_mail)).setOnClickListener(this);
         ((ImageView)findViewById(R.id.info_icon)).setOnClickListener(this);
         ((ImageView)findViewById(R.id.down_icon)).setOnClickListener(this);
-        String str = "Gotha Club has redefined nightlife in Cannes, French Riviera for the past 6 years, and now decided to settles in Dubai." + "\n" +
+        String str = "Gotha Club has redefined nightlife in Cannes, French Riviera for the past 6 years, and now decided to settle in Dubai." + "\n" +
                 "The Craziest, most select and glamorous nightclub, fashioned by APJ Management, features exclusive produced shows with a wide selection of Artists, hot on-trend clubbers, celebrities and VIP’s.\n" +
                 "The unique designed, Lighting and Audio System made Gotha sets the stage for a memorable nightlife experience.";
                 //"Launched in July 2011 on the French Rivieria, GOTHA CLUB is an unique and exclusice vvenue hosting sophisticated events and a completely original concept in entertainment. Gotha combines a classic night club with a live-entertainment venue. Its exclusively produced shows feature a wide selection of artists highlighting the best of contemporary music : from Dr Dre to Snoop from P.Diddy to David Guetta, to name only a few...\n" +

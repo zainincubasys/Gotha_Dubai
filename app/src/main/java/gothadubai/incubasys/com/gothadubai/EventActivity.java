@@ -78,7 +78,7 @@ public class EventActivity extends Activity {
                 @Override
                 public void onClick(View v) {
                     if (EventsController.Instance().eventsList.get(pager.getCurrentItem()).isAvailable()) {
-                        Intent tableBookingIntent = new Intent(EventActivity.this, TableBookingActivity.class);
+                        Intent tableBookingIntent = new Intent(EventActivity.this, BookingTableWebViewActivity.class);
                         tableBookingIntent.putExtra(CommonVaraibles.CONSTANT_PARAM_INTENT_CURRENT_BOOKING_EVENT, pager.getCurrentItem());
                         startActivity(tableBookingIntent);
                         overridePendingTransition(R.anim.push_up_in, R.anim.push_up_out);
@@ -110,6 +110,11 @@ public class EventActivity extends Activity {
             });
 
             pager.setCurrentItem(EventsController.Instance().eventsList.size() - 1);
+            if (EventsController.Instance().eventsList.get(EventsController.Instance().eventsList.size() - 1).isAvailable()) {
+                tableBooking.setImageResource(R.drawable.icon_table_booking_on);
+            } else {
+                tableBooking.setImageResource(R.drawable.icon_table_booking_off);
+            }
         }else{
             pager.setVisibility(View.GONE);
             ((LinearLayout)findViewById(R.id.bottomLy)).setVisibility(View.GONE);

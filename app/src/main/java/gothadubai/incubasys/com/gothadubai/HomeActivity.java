@@ -241,7 +241,7 @@ public class HomeActivity extends Activity {
         labelerDates.add(new LabelerDate("VIDEOS", DateAdapter.VIEW_TYPE_ITEM, R.drawable.cat_videos));
         labelerDates.add(new LabelerDate("PHOTOS", DateAdapter.VIEW_TYPE_ITEM, R.drawable.cat_photos));
         labelerDates.add(new LabelerDate("EVENTS", DateAdapter.VIEW_TYPE_ITEM, R.drawable.cat_soirees));
-//        labelerDates.add(new LabelerDate("DINNER", DateAdapter.VIEW_TYPE_ITEM, R.drawable.cat_resto));
+        labelerDates.add(new LabelerDate("BOOKING", DateAdapter.VIEW_TYPE_ITEM, R.drawable.icon_table_booking_on));
         labelerDates.add(new LabelerDate("PARTNERS", DateAdapter.VIEW_TYPE_ITEM, R.drawable.cat_partners));
         labelerDates.add(new LabelerDate("NOTIFICATIONS", DateAdapter.VIEW_TYPE_ITEM, R.drawable.cat_notif));
 
@@ -452,6 +452,11 @@ public class HomeActivity extends Activity {
             overridePendingTransition(R.anim.push_up_in, R.anim.push_up_out);
         }
         else if(Integer.parseInt(v.getTag().toString()) == 4) {
+            Intent intent = new Intent(HomeActivity.this, BookingTableWebViewActivity.class);
+            startActivity(intent);
+            overridePendingTransition(R.anim.push_up_in, R.anim.push_up_out);
+        }
+        else if(Integer.parseInt(v.getTag().toString()) == 5) {
             Intent intent = new Intent(HomeActivity.this, PartnerActivity.class);
             startActivity(intent);
             overridePendingTransition(R.anim.push_up_in, R.anim.push_up_out);
